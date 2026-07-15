@@ -184,4 +184,3 @@ The coaching session shows that the project is built around a clear separation o
 - EJS templates render reusable page components.
 - CSS controls the visual presentation and responsiveness.
 
-This transcript is ready to be submitted as the coaching-session documentation for the assignment.
