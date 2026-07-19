@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<h1><%= projectDetails.name %></h1>
+<p><%= projectDetails.description %></p>
+<p>Location: <%= projectDetails.location %> | Date: <%= new Date(projectDetails.date).toLocaleDateString() %></p>
+<p>Organized by: <a href="/organization/<%= organization.organization_id %>"><%= organization.name %></a></p>
+
+<h2>Categories</h2>
+<ul>
+  <% categories.forEach(category => { %>
+    <li><a href="/category/<%= category.category_id %>"><%= category.name %></a></li>
+  <% }); %>
+</ul>
+<%- include('partials/footer') %>
